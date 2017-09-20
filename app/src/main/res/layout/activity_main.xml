@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <io.github.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/txtEmojicon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:lineSpacingExtra="9dp"
+        emojicon:emojiconAlignment="baseline"
+        emojicon:emojiconSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_pl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp">
+
+        <io.github.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+id/editEmojicon"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/bg_input"
+            android:hint="@string/hint"
+            android:lineSpacingExtra="9dp"
+            android:paddingLeft="7dp"
+            emojicon:emojiconSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0.0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_sr_bq" />
+
+        <Button
+            android:id="@+id/bt_fs"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:background="#00ddcc"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:visibility="gone" />
+</LinearLayout>

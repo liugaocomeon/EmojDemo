@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/emojicons_view">
+
+    <ImageButton
+        android:id="@+id/emojis_tab_0_recents"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="center"
+        android:src="@drawable/ic_emoji_recent_light" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/horizontal_vertical" />
+</merge>
